@@ -7,6 +7,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    
 }
 
 input{
@@ -34,6 +35,7 @@ a{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px 0;
+    
 }
 
 /* header*/
@@ -132,10 +134,15 @@ a{
     height: 110px;
 }
 
-#section-1 > img{
-    width: 30%;
-    height: 30%;
-    background: white;
+#section-1 > a {
+    display: block; /* block 유지해도 됨 */
+    width: 100%;           /* 필요하다면 100% */
+             /* ★ 이거 빼줘야 이미지 찌그러지지 않음 */
+}
+
+#section-1 img {
+    width: 690px;   /* 섹션 폭에 맞추고 싶다면 */
+    height: 110px;  /* 비율 유지하면서 크기 맞추기 */
 }
 
 #section-2{
@@ -155,6 +162,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    font-size: 13px;
 }
 
 #section-3{
@@ -213,7 +221,17 @@ a{
 
 #aside-2{
     height: 310px;
-    background: url(../images/shopping.PNG) no-repeat center/contain;
+    background: url(../images/dixit\ ad.jpg) no-repeat center/contain;
+    text-align: center;
+}
+
+#aside-2:hover{
+    
+}
+
+#asdie-2 .gb-1 image{
+    height: 310px;
+    width: 310px;
 }
 
 #footer{
